@@ -1,3 +1,3 @@
-import equals from 'validator/lib/equals'
+import { equals as equals_ } from 'validator/lib/equals'
 
-module.exports = (comparison, value) => equals(value, comparison);
+export const equals = (comparison, value) => equals_(value, comparison);

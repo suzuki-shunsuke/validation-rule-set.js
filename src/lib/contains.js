@@ -1,3 +1,3 @@
-import contains from 'validator/lib/contains'
+import { contains as contains_ } from 'validator/lib/contains'
 
-module.exports = (seed, value) => contains(value, seed);
+export const contains = (seed, value) => contains_(value, seed);

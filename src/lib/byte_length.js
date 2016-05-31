@@ -1,7 +1,5 @@
 import isByteLength from 'validator/lib/isByteLength'
 
-function byte_length(options, value) {
+export function byte_length(options, value) {
   return arguments.length === 1 ? isByteLength(options) : isByteLength(value, options);
 }
-
-module.exports = byte_length;
