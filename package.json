@@ -3,12 +3,14 @@
   "version": "0.1.0",
   "description": "",
   "scripts": {
-    "test": "npm run gulp test",
+    "test": "npm run test:node",
     "test:node": "mocha test/node/src/main.js",
     "bower": "bower",
     "eslint": "eslint",
     "gulp": "gulp",
-    "webpack": "webpack"
+    "webpack": "webpack",
+    "phantomjs": "phantomjs",
+    "mocha-phantomjs": "mocha-phantomjs"
   },
   "repository": {
     "type": "git",
@@ -33,6 +35,8 @@
     "gulp-mocha": "^2.2.0",
     "mithril": "^0.2.4",
     "mocha": "^2.5.3",
+    "mocha-phantomjs": "^4.0.2",
+    "phantomjs-prebuilt": "^2.1.7",
     "webpack": "^1.13.1"
   },
   "dependencies": {
