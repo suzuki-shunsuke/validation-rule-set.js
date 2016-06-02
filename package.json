@@ -4,6 +4,7 @@
   "description": "",
   "scripts": {
     "test": "npm run gulp test",
+    "test:node": "mocha test/node/src/main.js",
     "bower": "bower",
     "eslint": "eslint",
     "gulp": "gulp",
