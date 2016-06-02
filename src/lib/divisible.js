@@ -1,4 +1,4 @@
-import isDivisibleBy from 'validator/lib/isDivisibleBy'
+const isDivisibleBy = require('validator').isDivisibleBy;
 
 function divisible(number, value) {
   return arguments.length === 1 ? isDivisibleBy(number) : isDivisibleBy(value, number);

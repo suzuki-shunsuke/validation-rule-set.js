@@ -1,9 +1,3 @@
-import validator from 'validator'
-import isAscii from 'validator/lib/isAscii'
-import isBase64 from 'validator/lib/isBase64'
-import isBoolean from 'validator/lib/isBoolean'
-import isCreditCard from 'validator/lib/isCreditCard'
-
 module.exports = {
   after: require('./lib/after.js'),
   alpha: require('./lib/alpha.js'),
@@ -19,8 +13,8 @@ module.exports = {
   fqdn: require('./lib/fqdn.js'),
   ip: require('./lib/ip.js'),
 
-  ascii: isAscii,
-  base64: isBase64,
-  boolean: isBoolean,
-  credit_card: isCreditCard,
+  ascii: require('./lib/ascii.js'),
+  base64: require('./lib/base64.js'),
+  bool: require('./lib/bool.js'),
+  credit_card: require('./lib/credit_card.js'),
 };
