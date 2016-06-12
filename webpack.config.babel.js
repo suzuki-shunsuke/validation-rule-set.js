@@ -3,7 +3,6 @@ import webpack from 'webpack';
 
 module.exports = [
   {
-    // library
     entry: {
       'dist/validation-rule-set': './src/main.js',
     },
@@ -25,15 +24,15 @@ module.exports = [
       library: 'validation_rule_set',
       libraryTarget: 'umd'
     },
-    loaders: [{
-      test: /\.js$/,
-      exclude: /node_modules/,
-      // loader: 'babel-loader',
-      loader: 'babel',
-      query: {
-        preset: ['es2015'],
-        // plugins: ['transform-runtime']
-      }
-    }]
+    module: {
+      loaders: [{
+        test: /\.js$/,
+        exclude: /node_modules/,
+        loader: 'babel',
+        query: {
+          presets: ['es2015'],
+        }
+      }]
+    },
   },
 ];
